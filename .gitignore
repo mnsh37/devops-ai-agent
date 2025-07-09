@@ -1,0 +1,48 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+env/
+
+# === Terraform ===
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+crash.log
+override.tf
+override.tf.json
+
+# === Shell / Logs / Temp ===
+*.log
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# === Secrets ===
+*.pem
+*.key
+*.crt
+secrets.*
+credentials
+aws_credentials
+*.env
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# === Output / Build / Cache ===
+output/
+dist/
+build/
+
+# === Notebooks / Colab ===
+.ipynb_checkpoints/
