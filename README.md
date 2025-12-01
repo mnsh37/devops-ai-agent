@@ -6,10 +6,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-red?logo=streamlit)](https://streamlit.io)
 
-<p align="center">
-  <img src="https://via.placeholder.com/1000x400/2563EB/ffffff?text=DevOps+AI+Agent+%E2%9A%A1+Closed--Loop+AIOps" alt="DevOps AI Agent Banner"/>
-</p>
-
 ## Project Overview
 
 **DevOps AI Agent** is a fully autonomous, closed-loop AIOps system that reduces **Mean Time To Resolution (MTTR)** from hours to seconds.
