@@ -126,6 +126,10 @@ Key parameters can be adjusted directly in `detection-agent/detection_agent.py`:
     streamlit run detection-agent/agent_dashboard.py
     ```
 
+## Proof of Concept Demo
+https://youtu.be/4CwItTCkkTw
+
+
 ## Project Structure
 
 - `detection-agent/`: Contains the main agent logic (`detection_agent.py`) and dashboard code (`agent_dashboard.py`).
