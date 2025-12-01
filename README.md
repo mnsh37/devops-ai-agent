@@ -127,7 +127,10 @@ Key parameters can be adjusted directly in `detection-agent/detection_agent.py`:
     ```
 
 ## Proof of Concept Demo
-https://youtu.be/4CwItTCkkTw
+
+[![Watch the video: AI detects CPU spike → Gemini RCA → Auto-restart in under 45 seconds](https://img.youtube.com/vi/4CwItTCkkTw/maxresdefault.jpg)](https://youtu.be/4CwItTCkkTw)
+
+*Click above to watch the full autonomous remediation flow in action*
 
 
 ## Project Structure
