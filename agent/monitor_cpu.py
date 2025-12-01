@@ -1,1 +1,0 @@
-# CPU anomaly detection using Prometheus
