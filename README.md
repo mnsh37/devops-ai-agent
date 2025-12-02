@@ -26,39 +26,39 @@ Deployed on a lightweight AWS EC2 instance, it continuously monitors infrastruct
 ## System Architecture
 
 ```text
-┌────────────────┐       ┌───────────────────┐       ┌─────────────────┐
+┌────────────────┐       ┌──────────────────┐       ┌─────────────────┐
 │   Prometheus   │ ◄──► │  Node Exporter    │       │   Docker Apps   │
-│     + Loki     │       └───────────────────┘       └─────────────────┘
+│     + Loki     │       └──────────────────┘       └─────────────────┘
 └────────────────┘             ▲      ▲                        ▲
         ▲                      │      │                        │
         │                      │      │                        │
         │                ┌─────▼──────┴─────┐          ┌────────┴────────┐
-        │                │    Promtail       │          │   Containers    │
-        └────────────────┤   (Log Shipping)  ├──────────►   (your apps)   │
-                         └───────────────────┘          └─────────────────┘
+        │                │    Promtail      │          │   Containers    │
+        └────────────────┤   (Log Shipping) ├──────────►   (your apps)   │
+                         └──────────────────┘          └─────────────────┘
                                   ▲
                                   │
                         ┌─────────▼──────────┐
-                        │   DevOps AI Agent    │
-                        │ (detection-agent/)   │
+                        │   DevOps AI Agent  │
+                        │ (detection-agent/) │
                         └─────────┬──────────┘
                                   │
                   ┌───────────────▼────────────────┐
-                  │    Google Gemini (RCA Engine)   │
+                  │    Google Gemini (RCA Engine)  │
                   └───────────────┬────────────────┘
                                   │
                   ┌───────────────▼────────────────┐
-                  │     Auto-Remediation Actions    │
-                  │  docker restart, systemctl...   │
+                  │     Auto-Remediation Actions   │
+                  │  docker restart, systemctl...  │
                   └───────────────┬────────────────┘
                                   │
                  ┌────────────────┴────────────────┐
-                 │         Streamlit Dashboard      │
-                 │      (agent_dashboard.py)        │
+                 │         Streamlit Dashboard     │
+                 │      (agent_dashboard.py)       │
                  └────────────────┬────────────────┘
                                   │
                           ┌───────▼────────┐
-                          │   Slack Alerts   │
+                          │   Slack Alerts │
                           └────────────────┘
 ```
 
