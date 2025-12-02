@@ -27,7 +27,7 @@ Deployed on a lightweight AWS EC2 instance, it continuously monitors infrastruct
 
 ```text
 ┌────────────────┐       ┌──────────────────┐       ┌─────────────────┐
-│   Prometheus   │ ◄──► │  Node Exporter    │       │   Docker Apps   │
+│   Prometheus   │ ◄──►  │  Node Exporter   │       │   Docker Apps   │
 │     + Loki     │       └──────────────────┘       └─────────────────┘
 └────────────────┘             ▲      ▲                        ▲
         ▲                      │      │                        │
